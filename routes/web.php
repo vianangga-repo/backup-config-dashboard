@@ -20,15 +20,25 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/bgpnoc', [BackupDashboardController::class, 'bgpnoc'])->name('bgpnoc');
 
     // Halaman list file Tandes
-    Route::get('/distribution/tandes',[BackupDashboardController::class, 'disttandes'])->name('distri.tandes');
+    Route::get('/distribution/tandes',[BackupDashboardController::class, 'distTandes'])->name('distri.tandes');
     // Eksekusi download file Tandes
     Route::get('/distribution/tandes/download/{filename}', [BackupDashboardController::class, 'downloadTandes'])->name('distri.tandes.download');
 
     // Halaman list file Dinkes
-    Route::get('/distribution/dinkes',[BackupDashboardController::class, 'distdinkes'])->name('distri.dinkes');
+    Route::get('/distribution/dinkes',[BackupDashboardController::class, 'distDinkes'])->name('distri.dinkes');
     // Eksekusi download file Dinkes
     Route::get('/distribution/dinkes/download/{filename}', [BackupDashboardController::class, 'downloadDinkes'])->name('distri.dinkes.download');
 
+
+    // Route uji coba langsung akses url: domain-anda.com/under-development
+    Route::get('/under-development', function () {
+        return view('developmentpage');
+    })->name('under.development');
+
+    // Route uji coba langsung akses url: domain-anda.com/under-development
+    Route::get('/underdevelopment', function () {
+        return view('development');
+    })->name('under.develop');
     
     // Tambahkan kembali rute profile bawaan Breeze ini:
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

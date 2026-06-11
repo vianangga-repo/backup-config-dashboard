@@ -30,10 +30,10 @@ class BackupDashboardController extends Controller
     }
 
     public function bgpnoc(){
-        return view('bgpnoc');
+        return view('bgp.bgpnoc');
     }
 
-    public function disttandes(){
+    public function distTandes(){
         
         $files = [];
     
@@ -72,7 +72,7 @@ class BackupDashboardController extends Controller
         return view('distribution.tandes', compact('files'));
     }
 
-    public function distdinkes(){
+    public function distDinkes(){
         $files = [];
     
         // 1. Panggil disk absolut yang sudah kita daftarkan di config/filesystems.php
@@ -109,6 +109,7 @@ class BackupDashboardController extends Controller
         // 3. Lempar datanya ke view blade khusus milik Dinkes
         return view('distribution.dinkes', compact('files'));
     }
+    
 
     public function downloadDinkes($filename){
         $disk = Storage::disk('bcdinkes');

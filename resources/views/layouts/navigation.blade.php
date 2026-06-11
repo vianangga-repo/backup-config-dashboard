@@ -25,8 +25,8 @@
                     <svg :class="open ? 'rotate-180' : ''" class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </button>
                 <div x-show="open" x-transition class="mt-1 ml-6 pl-2 border-l border-slate-800 space-y-1">
-                    <a href="/bgpnoc" class="block px-4 py-2 text-xs rounded-lg text-slate-400 hover:bg-slate-800 hover:text-slate-200">BGP NOC</a>
-                    <a href="#" class="block px-4 py-2 text-xs rounded-lg text-slate-400 hover:bg-slate-800 hover:text-slate-200">BGP DRC</a>
+                    <a href="{{route('under.development')}}" class="block px-4 py-2 text-xs rounded-lg text-slate-400 hover:bg-slate-800 hover:text-slate-200">BGP NOC</a>
+                    <a href="{{route('under.develop')}}" class="block px-4 py-2 text-xs rounded-lg text-slate-400 hover:bg-slate-800 hover:text-slate-200">BGP DRC</a>
                 </div>
             </div>
 
@@ -49,10 +49,9 @@
                     <a href="#" class="block px-4 py-1.5 text-xs rounded-lg text-slate-400 hover:bg-slate-800 hover:text-slate-200 flex items-center gap-1.5"><span class="w-1 h-1 bg-blue-500 rounded-full"></span> Distri Menanggal</a>
                     <a href="#" class="block px-4 py-1.5 text-xs rounded-lg text-slate-400 hover:bg-slate-800 hover:text-slate-200 flex items-center gap-1.5"><span class="w-1 h-1 bg-blue-500 rounded-full"></span> Distri Bratang</a>
                     <a href="#" class="block px-4 py-1.5 text-xs rounded-lg text-slate-400 hover:bg-slate-800 hover:text-slate-200 flex items-center gap-1.5"><span class="w-1 h-1 bg-blue-500 rounded-full"></span> Distri Dinsos</a>
-                    <a href="#" class="block px-4 py-1.5 text-xs rounded-lg text-slate-400 hover:bg-slate-800 hover:text-slate-200 flex items-center gap-1.5"><span class="w-1 h-1 bg-blue-500 rounded-full"></span> Distri Soewandhie</a>
-                    <a href="#" class="block px-4 py-1.5 text-xs rounded-lg text-slate-400 hover:bg-slate-800 hover:text-slate-200 flex items-center gap-1.5"><span class="w-1 h-1 bg-blue-500 rounded-full"></span> Distri Siola</a>
+                    
                     <a href="#" class="block px-4 py-1.5 text-xs rounded-lg text-slate-400 hover:bg-slate-800 hover:text-slate-200 flex items-center gap-1.5"><span class="w-1 h-1 bg-blue-500 rounded-full"></span> Distri Semampir</a>
-                    <a href="#" class="block px-4 py-1.5 text-xs rounded-lg text-slate-400 hover:bg-slate-800 hover:text-slate-200 flex items-center gap-1.5"><span class="w-1 h-1 bg-blue-500 rounded-full"></span> Distri BDH</a>
+                    
                 </div>
             </div>
 

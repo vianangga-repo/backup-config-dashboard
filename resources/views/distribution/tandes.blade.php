@@ -1,7 +1,7 @@
 <x-app-layout>
     <div class="mb-6">
         <h1 class="text-2xl font-bold text-gray-900 tracking-tight">Distri Tandes </h1>
-        <p class="text-xs text-gray-500 mt-1">Halaman backup config manajemen untuk perangkat Distribusi Tandes.</p>
+        <p class="text-xs text-gray-500 mt-1">Berkas konfigurasi hasil otomasi Ansible untuk perangkat Distribusi Tandes.</p>
     </div>
 
     <div class="bg-white rounded-2xl border border-gray-200 shadow-xs overflow-hidden w-full">
